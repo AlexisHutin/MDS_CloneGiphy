@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>GIFIT!</title>
+</head>
+
+<style>
+	
+	body{
+		margin: 0;
+		padding: 0;
+		background-color: #383333;
+	}
+	#search{
+		height: 20%;
+		text-align: center;
+		padding: 25px;
+	}
+	#search input{ 
+		font-size: 40px;
+	}
+	#search button{
+		font-size: 40px;
+		color: white;
+		background-color: #4c636b;
+		border: none;
+	}
+	#gifs{
+		display: flex;
+		flex-wrap: wrap;
+		height: 75%;
+	}
+	.gif{
+		padding: 1px;
+		flex: 1 1 10%;
+		width: 100%;
+		vertical-align: middle;
+	}
+	
+
+</style>
+
+<body>
+	<div id="search">
+		<input type="search" placeholder="JUST DO IT !" autofocus>
+		<button type="button" onclick="searchGIFs();">DO IT !</button>
+	</div>
+
+	<div id="gifs"></div>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="gif.js"></script>
+</body>
+</html>
